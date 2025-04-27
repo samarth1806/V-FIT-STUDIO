@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beautiful responsive image gallery with lightbox functionality">
+    <title>Photo Gallery | Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="home-page">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><i class="fas fa-camera"></i> Photo<span>Gallery</span></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Capture the Moment</h2>
+                    <p>Explore our stunning collection of high-quality images from around the world.</p>
+                    <div class="cta-buttons">
+                        <a href="gallery.html" class="btn btn-primary">View Gallery</a>
+                        <a href="#categories" class="btn btn-secondary">Explore Categories</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories">
+            <div class="container">
+                <h2 class="section-title">Photo Categories</h2>
+                <div class="category-grid">
+                    <div class="category-card" data-category="nature">
+                        <div class="category-img">
+                            <img src="https://source.unsplash.com/random/600x400?nature" alt="Nature Photography">
+                        </div>
+                        <div class="category-info">
+                            <h3>Nature</h3>
+                            <p>Breathtaking landscapes and natural wonders</p>
+                            <a href="gallery.html#nature" class="category-link">View Collection <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="architecture">
+                        <div class="category-img">
+                            <img src="https://source.unsplash.com/random/600x400?architecture" alt="Architecture Photography">
+                        </div>
+                        <div class="category-info">
+                            <h3>Architecture</h3>
+                            <p>Stunning buildings and architectural marvels</p>
+                            <a href="gallery.html#architecture" class="category-link">View Collection <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="people">
+                        <div class="category-img">
+                            <img src="https://source.unsplash.com/random/600x400?people" alt="People Photography">
+                        </div>
+                        <div class="category-info">
+                            <h3>People</h3>
+                            <p>Portraits and candid moments of people worldwide</p>
+                            <a href="gallery.html#people" class="category-link">View Collection <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="animals">
+                        <div class="category-img">
+                            <img src="https://source.unsplash.com/random/600x400?animals" alt="Animal Photography">
+                        </div>
+                        <div class="category-info">
+                            <h3>Animals</h3>
+                            <p>Wildlife and animal photography from around the globe</p>
+                            <a href="gallery.html#animals" class="category-link">View Collection <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About Our Gallery</h2>
+                        <p>Welcome to PhotoGallery, a curated collection of stunning images from talented photographers around the world. Our mission is to showcase the beauty of our world through the lens of a camera.</p>
+                        <p>Each image in our gallery has been carefully selected for its quality, composition, and the story it tells. We believe that photography is not just about capturing moments, but about sharing experiences and perspectives.</p>
+                        <a href="gallery.html" class="btn btn-primary">Explore Gallery</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://source.unsplash.com/random/600x800?camera" alt="Camera and photography equipment">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Gallery Street, Photo City, PC 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@photogallery.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><i class="fas fa-camera"></i> Photo<span>Gallery</span></h2>
+                    <p>Capturing moments, preserving memories</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PhotoGallery. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
