@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our collection of high-quality images in our responsive gallery">
+    <title>Photo Gallery | Browse Images</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="gallery-page">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><i class="fas fa-camera"></i> Photo<span>Gallery</span></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-header">
+            <div class="container">
+                <h2>Photo Gallery</h2>
+                <p>Browse our collection of stunning images from around the world</p>
+                
+                <div class="gallery-controls">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search images...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="filter-controls">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="nature">Nature</button>
+                        <button class="filter-btn" data-filter="architecture">Architecture</button>
+                        <button class="filter-btn" data-filter="people">People</button>
+                        <button class="filter-btn" data-filter="animals">Animals</button>
+                    </div>
+                    
+                    <div class="view-controls">
+                        <button id="grid-view" class="view-btn active" aria-label="Grid View"><i class="fas fa-th"></i></button>
+                        <button id="list-view" class="view-btn" aria-label="List View"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-container">
+            <div class="container">
+                <div id="gallery" class="gallery-grid">
+                    <!-- Nature Images -->
+                    <div class="gallery-item" data-category="nature">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?nature,mountains" alt="Mountain landscape with snow-capped peaks" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Mountain Vista</h3>
+                                <p>Majestic mountain range with snow-capped peaks</p>
+                                <div class="gallery-item-tags">
+                                    <span>Nature</span>
+                                    <span>Mountains</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>245</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="nature">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?nature,forest" alt="Dense forest with sunlight streaming through trees" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Forest Light</h3>
+                                <p>Sunlight streaming through a dense forest canopy</p>
+                                <div class="gallery-item-tags">
+                                    <span>Nature</span>
+                                    <span>Forest</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>189</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="nature">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?nature,ocean" alt="Ocean waves crashing on a rocky shore" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Ocean Waves</h3>
+                                <p>Powerful waves crashing against a rocky coastline</p>
+                                <div class="gallery-item-tags">
+                                    <span>Nature</span>
+                                    <span>Ocean</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>312</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Architecture Images -->
+                    <div class="gallery-item" data-category="architecture">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?architecture,modern" alt="Modern glass skyscraper reflecting clouds" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Glass Tower</h3>
+                                <p>Modern skyscraper with glass facade reflecting clouds</p>
+                                <div class="gallery-item-tags">
+                                    <span>Architecture</span>
+                                    <span>Modern</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>178</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="architecture">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?architecture,historic" alt="Historic European cathedral with ornate details" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Gothic Cathedral</h3>
+                                <p>Historic European cathedral with ornate architectural details</p>
+                                <div class="gallery-item-tags">
+                                    <span>Architecture</span>
+                                    <span>Historic</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>256</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="architecture">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?architecture,bridge" alt="Suspension bridge spanning across a river" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Suspension Bridge</h3>
+                                <p>Engineering marvel spanning across a wide river</p>
+                                <div class="gallery-item-tags">
+                                    <span>Architecture</span>
+                                    <span>Bridge</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>203</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- People Images -->
+                    <div class="gallery-item" data-category="people">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?people,portrait" alt="Portrait of a woman with natural lighting" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Natural Portrait</h3>
+                                <p>Candid portrait of a woman in natural lighting</p>
+                                <div class="gallery-item-tags">
+                                    <span>People</span>
+                                    <span>Portrait</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>287</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="people">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?people,crowd" alt="Crowd of people at a festival or concert" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Festival Crowd</h3>
+                                <p>Energetic crowd enjoying a music festival</p>
+                                <div class="gallery-item-tags">
+                                    <span>People</span>
+                                    <span>Event</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>165</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="people">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?people,street" alt="Street photography of people walking in a city" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Urban Life</h3>
+                                <p>Street photography capturing the essence of city life</p>
+                                <div class="gallery-item-tags">
+                                    <span>People</span>
+                                    <span>Street</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>198</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Animal Images -->
+                    <div class="gallery-item" data-category="animals">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?animals,wildlife" alt="Wild lion in its natural habitat" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>King of the Savanna</h3>
+                                <p>Majestic lion in its natural habitat</p>
+                                <div class="gallery-item-tags">
+                                    <span>Animals</span>
+                                    <span>Wildlife</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>342</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="animals">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?animals,bird" alt="Colorful bird perched on a branch" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Tropical Bird</h3>
+                                <p>Vibrant tropical bird displaying its colorful plumage</p>
+                                <div class="gallery-item-tags">
+                                    <span>Animals</span>
+                                    <span>Bird</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>276</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="animals">
+                        <div class="gallery-item-inner">
+                            <img src="https://source.unsplash.com/random/800x600?animals,underwater" alt="Colorful fish in a coral reef" loading="lazy" class="gallery-img">
+                            <div class="gallery-item-info">
+                                <h3>Underwater World</h3>
+                                <p>Vibrant marine life in a coral reef ecosystem</p>
+                                <div class="gallery-item-tags">
+                                    <span>Animals</span>
+                                    <span>Marine</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item-overlay">
+                                <button class="view-btn"><i class="fas fa-eye"></i> View</button>
+                                <div class="gallery-item-likes">
+                                    <i class="fas fa-heart"></i>
+                                    <span>231</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="load-more">
+                    <button id="load-more-btn" class="btn btn-primary">Load More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button id="close-lightbox" class="close-btn" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+            <button id="prev-btn" class="nav-btn prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+            <button id="next-btn" class="nav-btn next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+            
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="/placeholder.svg" alt="">
+                <div class="image-counter"><span id="current-index"></span> / <span id="total-images"></span></div>
+            </div>
+            
+            <div class="lightbox-details">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <div class="lightbox-meta">
+                    <div class="lightbox-tags" id="lightbox-tags"></div>
+                    <div class="lightbox-actions">
+                        <button class="action-btn" aria-label="Like"><i class="far fa-heart"></i></button>
+                        <button class="action-btn" aria-label="Download"><i class="fas fa-download"></i></button>
+                        <button class="action-btn" aria-label="Share"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><i class="fas fa-camera"></i> Photo<span>Gallery</span></h2>
+                    <p>Capturing moments, preserving memories</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PhotoGallery. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
